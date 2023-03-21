@@ -56,6 +56,10 @@ img {
   box-shadow: 7px 7px 1px black;
 }
 
+img.rounded {
+  border-radius: 50%;
+}
+
 a:hover {
   color: #c00;
 }
