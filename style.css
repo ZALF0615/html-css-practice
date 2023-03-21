@@ -1,65 +1,85 @@
-html {
-  font-size: 16px;
-}
-
-html {
-  background-color: #00539F;
-}
-
+/* 전체 페이지 스타일 */
 body {
-  width: 600px;
-  margin: 20px auto;
-  background-color: #FF9500;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
-}
-
-h1 {
-  font-size: 60px;
-  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
+  background-image: url(https://thumb.ac-illust.com/c7/c76bb7e77bbef5bab8df0d950446a11e_t.jpeg);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: left bottom;
   margin: 0;
-  padding: 20px 0;
-  color: #00539F;
-  text-shadow: 3px 3px 1px black;
+  padding: 0;
 }
 
-p, li {
-  line-height: 2;
-  letter-spacing: 1px;
+
+/* 제목 스타일 */
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 2rem;
+  color: #FFA07A;
+  text-shadow: 2px 2px 2px #FFE5B4;
+  font-family: 'Cookie', cursive;
 }
 
-p.bold {
-  font-weight: 600;
+
+/* 폼 스타일 */
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #F5F5F5;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
   font-size: 1.2rem;
-}
-
-#warning {
-  text-decoration: underline;
-}
-
-table {
-  margin-left: 20px;
-}
-
-th {
-  padding: 10px;
-  border-bottom: 1px dashed;
-}
-
-td {
-  padding: 10px;
-}
-
-img {
+  margin-bottom: 0.5rem;
   display: block;
-  margin: 0 auto;
-  box-shadow: 7px 7px 1px black;
 }
 
-img.rounded {
-  border-radius: 50%;
+select {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
-a:hover {
-  color: #c00;
+button {
+  background-color: #FFCC99;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
+
+button:hover {
+  background-color: #FF9966;
+}
+
+/* 결과 출력 영역 스타일 */
+#nameResult {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #FFA07A;
+}
+
+/* 고양이 이름 스타일 */
+#nameResult span {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FF9966;
+}
+
+#intro {
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #FFE5B4;
+  padding: 0.5rem;
+}
+
+
+

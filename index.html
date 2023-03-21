@@ -1,63 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>My first page</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <h1>Cat is cool</h1>
-    <img src="beer.jpg" alt="A cat with beer." class="rounded">
-
-    <p class="bold">고양이와 함께하는 <strike>맥주</strike>우유 파티에 초대합니다!</p>
-
-    <p>고양이들과 함께 노래하며 즐거운 시간을 보내세요!
-(물론 고양이가 술을 마시진 않을 거에요!) 참석 조건은 다음과 같습니다.</p>
-
-    <ul>
-      <li>까칠한 고양이들도 인내심을 가지고 대해줄 수 있어야 합니다.</li>
-      <li>고양이들에게 귀여움 무시무시한 눈초리를 보내지 않아야 합니다.</li>
-      <li>우유를 마시고 취할 준비가 되어 있어야 합니다.</li>
-    </ul>
-
-    <p class="bold">초대 가수 명단</p>
-
-    <table>
-      <thead>
-        <th>순서</th>
-        <th>이름</th>
-        <th>노래</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>문어발</td>
-          <td>캣츠</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>쥐돌이</td>
-          <td>미야옹</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p id="warning" class="bold">주의사항</p>
-
-    <ol>
-      <li>고양이들에게 안경을 씌우지 마세요.</li>
-      <li>가방을 꼭 닫아 놓으세요. 그렇지 않으면 고양이들이 안에 들어가 놀아요.</li>
-      <li>고양이들의 사랑을 듬뿍 받고 싶으시면 츄르를 가져오세요!</li>
-      <li>고양이의 민감한 코와 귀를 위해, 냄새와 소음을 최소화해주세요.</li>
-      <li>고양이가 스트레스를 받지 않도록 조용하고 부드러운 말투로 대해주세요.</li>
-    </ol>
-
-    <p>고양이에 대한 더 자세한 사항은 <a href="https://en.wikipedia.org/wiki/Cat">Wikipedia</a> 페이지를 참고하세요.</p>
-
-    <p class="bold">
-      참가신청하기<br />
-      <input name="name" placeholder="이메일을 입력해주세요" />
-      <button onClick="alert('신청완료')">참가신청</button>
-    </p>
-  </body>
+<html>
+<head>
+	<title>고양이 이름 생성기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>고양이 이름 생성기</h1>
+  <div id="intro">
+    <p>안녕하세요! 나는 고양이 이름 생성기를 소개하러 왔어요. 
+      여기서는 고양이의 성별, 색상, 성격을 선택하면 고양이 이름을 만들어드려요. 
+      어때요, 귀여워서 설레지 않나요? 함께 즐겁게 고양이 이름을 찾아보아요!</p>
+  </div>  
+	<form>
+		<label for="gender">성별:</label>
+		<select id="gender" name="gender">
+			<option value="male">수컷</option>
+			<option value="female">암컷</option>
+		</select>
+		<br>
+		<label for="color">색상:</label>
+		<select id="color" name="color">
+			<option value="black">검정색</option>
+			<option value="white">하얀색</option>
+			<option value="gray">회색</option>
+			<option value="brown">갈색</option>
+			<option value="orange">주황색</option>
+			<option value="calico">칼리코</option>
+		</select>
+		<br>
+		<label for="personality">성격:</label>
+		<select id="personality" name="personality">
+			<option value="playful">재미있는</option>
+			<option value="shy">수줍은</option>
+			<option value="curious">호기심 많은</option>
+			<option value="relaxed">편안한</option>
+			<option value="bold">대담한</option>
+			<option value="sweet">다정한</option>
+		</select>
+		<br>
+		<button type="button" onclick="generateName()">이름 생성하기</button>
+	</form>
+	<div id="nameResult"></div>
+	<script src="script.js"></script>
+</body>
 </html>
